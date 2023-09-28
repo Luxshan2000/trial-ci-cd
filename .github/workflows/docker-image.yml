@@ -25,7 +25,7 @@ jobs:
     runs-on: [aws-ec2]
     steps:
       - name: Pull image from docker hub
-        run: docker pull luxshan/trial-ci-cd:latest
+        run: docker pull luxshan/trial-ci-cd
       - name: Delete old container
         run: docker rm -f trial-ci-cd-container
       - name: Run docker container
