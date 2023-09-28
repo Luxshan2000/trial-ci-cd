@@ -29,4 +29,4 @@ jobs:
       - name: Delete old container
         run: docker rm -f trial-ci-cd-container
       - name: Run docker container
-        run: docker run -d -p 3000:3000 --name trial-ci-cd-container luxshan2000/trial-ci-cd
+        run: docker run -d -p 3000:3000 --name trial-ci-cd-container luxshan/trial-ci-cd
