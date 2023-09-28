@@ -16,7 +16,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Build docker image
-        run: docker build -t Luxshan2000/trial-ci-cd .
+        run: docker build -t luxshan2000/trial-ci-cd .
       - name: Publish image to docker hub
         run: docker push Luxshan2000/trial-ci-cd:latest
         
